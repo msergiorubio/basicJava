@@ -1,0 +1,11 @@
+contador_Sandwiches es igual a cero
+while (contador_Sandwiches es menor que cinco){
+hacer sandwchJamon()
+sumar uno a contador_Sandwiches
+}
+
+contador_Sandwiches es igual a cero
+while (contador_Sandwiches es menor que diez){
+hacer sandwchBolonia()
+sumar uno a contador_Sandwiches
+}

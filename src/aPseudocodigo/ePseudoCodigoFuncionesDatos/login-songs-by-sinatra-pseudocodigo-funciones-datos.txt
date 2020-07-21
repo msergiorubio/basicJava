@@ -1,0 +1,6 @@
+verificarUser(userName){
+    if (userName es diferente a frank){
+    Imprimir "Usario incorrecto"
+    }
+
+  

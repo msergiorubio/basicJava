@@ -1,0 +1,8 @@
+darLike(nombreCancion){
+   if (nombreCancion es "Cancion1Sergio"){
+      clickBotonLike(Like)
+      }
+      if (nombreCancion es diferente a "Cancion1Sergio"){
+      clickLinkRegreso(Back To Songs Index)
+      }
+}

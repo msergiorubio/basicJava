@@ -1,0 +1,7 @@
+La cancion tiene like?
+   if(la repuesta es si){
+   clickLinkRegreso(Back To Songs Index)
+   else {
+   clickBotonLike(Like)
+   }
+}

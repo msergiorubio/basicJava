@@ -3,7 +3,7 @@ package bHolaMundo;
 public class Buggy0 {
 
 	public static void main(String[] args) {
-		//Input.print("hello, world\n");
+		System.out.println("hello, world\n");//Input.print("hello, world\n");
 
 	}
 

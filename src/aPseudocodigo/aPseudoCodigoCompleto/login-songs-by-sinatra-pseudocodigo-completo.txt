@@ -1,0 +1,44 @@
+probarLoginHappyPath() {
+    navegarPagina()
+    verificarElementos()
+    accesarPaginaLogin()
+    verificarElementosPaginaLogin()
+    capturarUserNamePassword()
+    verificarPaginaBienvenida()
+}
+
+navegarPagina() {
+    ingresarUrl(https://evening-bastion-49392.herokuapp.com/)
+    esperarCargadePagina (3000)
+}
+
+verificarElementos() {
+    esperarPresentacion(3000)
+    verificarImagenSinatra(Sinatra)
+    verificarLinkLoginActivo()
+}
+
+accesarPaginaLogin() {
+    darClickLinkLogin()
+}
+
+verificarElementosPaginaLogin() {
+   esperarPaginaLogin(3000)
+   verificarCampoUserName()
+   verificarCampoPassword()
+   verificarBotonLoginActivo()
+   }
+
+capturarUserNamePassword(){
+    ingresarUserName(frank)
+    ingresarPassword(sinatra)
+    darClickBotonLogin()
+}
+
+verificarPaginaBienvenida(){
+    esperarPaginaBienvenida(3000)
+    verificarMensaje(You are now logged in as frank)
+    verificarEtiqueta(Songs)
+    verificarLinkCreaNuvaCancion()
+    verificarLinkLogoutActivo()
+}

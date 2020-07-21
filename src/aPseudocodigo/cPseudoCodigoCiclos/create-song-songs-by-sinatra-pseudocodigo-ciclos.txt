@@ -1,0 +1,5 @@
+Contador_Canciones es igual a cero
+while (Contador_Canciones es menor que 5){
+       agregarCancion()
+       sumar uno a ontador_Canciones
+}

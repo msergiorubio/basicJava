@@ -1,0 +1,13 @@
+ agregarCancion(){
+          clickLinkCrearNuevaCancion(Create a new sog)
+          verificarLaEtiquetaAgregarNuevaCancion(Add A New Song)
+          verificarComponenteTitulo(Title)
+          verificarComponenteLongitud(Length)
+          verificarComponenteFecha(date mm/dd/yyyy)
+          verificarComponenteLetra(Lyrics)
+          verificarBotonSalvarCancion(Save Song)
+          ingresarTitulo(Cancion1Sergio)
+          ingresarLongitud(4)
+          ingresarLetra(abcd)
+          clickBotonSalvarCancion(Save Song)
+  }

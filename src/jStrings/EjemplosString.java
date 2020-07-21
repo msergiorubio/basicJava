@@ -28,12 +28,12 @@ public class EjemplosString {
 		Input.print("Input your name: ");
 		String nombre = Input.get_string();
 		Input.print(nombre + "\n");
-		String name = "Pedro Perez";
-		name.length();
-		name.contains("Pedro");
-		name.startsWith("Pedro");
-		name.endsWith("Perez");
-		name.split(" ");
+	//	String name = "Pedro Perez";
+		nombre.length();
+		nombre.contains("Pedro");
+		nombre.startsWith("Pedro");
+		nombre.endsWith("Perez");
+		nombre.split(" ");
 
 
 	}

@@ -1,0 +1,58 @@
+ProbarAgregarCancionHappyPath(){
+       abrirPaginaAgregarCancion()
+       verificarElementosAgregarCancion()
+       agregarCancion()
+       verificarCancionAgregada()
+       salirDelaPagina()
+}
+
+     abrirPaginaAgregarCancion(){
+         navegarPaginaAgregarCancion(https://evening-bastion-49392.herokuapp.com/songs)
+
+     }
+
+     verificarElementosAgregarCancion(){
+         esperarCarga(3000)
+         verificarEtiquetaSongs(Songs)
+         verificarLinkCrearNuevaCancion(Create a new song)
+         verificarLinkSalir(Log Out)
+
+     }
+//*en una misma funcion se pueden codificar dos o mas diferentes funcioalidades o se deben separar (?)
+//*Es recomendable usar nombres largos para quesea uy descriptivo (?)
+
+     agregarCancion(){
+          clickLinkCrearNuevaCancion(Create a new sog)
+          verificarLaEtiquetaAgregarNuevaCancion(Add A New Song)
+          verificarComponenteTitulo(Title)
+          verificarComponenteLongitud(Length)
+          verificarComponenteFecha(date mm/dd/yyyy)
+          verificarComponenteLetra(Lyrics)
+          verificarBotonSalvarCancion(Save Song)
+          ingresarTitulo(Cancion1Sergio)
+          ingresarLongitud(4)
+          ingresarLetra(abcd)
+          clickBotonSalvarCancion(Save Song)
+     }
+     verificarCancionAgregada(){
+          esperarCargaPaginaCancionAgregada(3000)
+          verificarEtiquetaExitoso(Song successfully added)
+          verificarNombreCancionAgregada(Cancion1Sergio)
+          verificarFecha(releasedate)
+          verificarLongitud(Lenght)
+          verificarLetra(abcd)
+          verificarBotonLike(Like)
+          verificarLinkRegreso(Back To Songs Index)
+          verificarLinkEditar(edit this song)
+          verificarBotonDelete(delete this song)
+          verificarLinkLogOut(logout)
+
+     }
+
+     salirDelaPagina(){
+          clickLinkRegreso(Back To Songs Index)
+          verificarCancionEnLista(Lista)
+//Se hace referencia a una funcion que etsa codificada mas arriba
+          verificarElementosAgregarCancion()
+     }
+
